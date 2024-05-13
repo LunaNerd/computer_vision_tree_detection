@@ -114,16 +114,16 @@ RUN mkdir -p /home/jovyan/.cache/pip && chmod -R 777 /home/jovyan/.cache/pip
 # Install Python packages using pip
 RUN mamba install -y pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
 
-# RUN pip install gdown matplotlib open3d opencv-python torch-scatter tensorboard scipy tqdm pyyaml
+RUN /opt/conda/envs/droidslam/bin/pip install --no-cache-dir gdown matplotlib open3d opencv-python torch-scatter tensorboard scipy tqdm pyyaml
 
 # Install remaining Python packages using pip
-RUN pip install --no-cache-dir gdown matplotlib open3d opencv-python tensorboard scipy tqdm pyyaml
+# RUN pip install --no-cache-dir gdown matplotlib open3d opencv-python tensorboard scipy tqdm pyyaml
 
 # Install torch-scatter separately after torch is available
 # RUN pip install torch-scatter
 
 # Install torch-scatter using conda
-RUN mamba install -c conda-forge torch-scatter
+# RUN mamba install -c conda-forge torch-scatter
 
 RUN mamba install -c conda-forge suitesparse
 
