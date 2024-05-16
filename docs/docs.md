@@ -94,4 +94,4 @@ plt.show()
 
 ![alt text](image-4.png)
 
-When using different max_width sizes for the depth maps the results were similar. The larger max_width (b) resulted in an images with more noise and gaps. The smaller max_width (a) had smoother tree surfaces and seemed to generalize better. The depth were both resized to the original 2D input image size. After that it can be seen that the depth of the same point on depth map (a) and (b) is very similar. There was only a small error margin of 0.0003 units.
+When using different max_width sizes for the depth maps the results were similar. The larger max_width (b) resulted in an images with more noise and gaps. The smaller max_width (a) had smoother tree surfaces and seemed to generalize better. The depth maps were both resized to the original 2D input image size. After that it can be seen that the depth of the same point on depth map (a) and (b) is very similar. There was only a small error margin of 0.0003 units.
