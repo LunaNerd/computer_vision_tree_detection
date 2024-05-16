@@ -10,11 +10,11 @@ Data used here can be found in the shared onedrive folder.
 
 ? Points found in sparse model are also found in dense model. (Ik denk van wel maar nog niet 100% zeker moet overlap testen in python.)
 
-![alt text](dense_selected_point.png)
+![alt text](sparse_selected_point.png)
 Sparse model with coordinates of a selected point:  
 `-0.673285, 0.433945, -1.83049`
 
-![alt text](sparse_selected_point.png)
+![alt text](dense_selected_point.png)
 Dense model with coordinates of a closely located selected point:  
 `-0.677054, 0.414289, -1.84333`
 

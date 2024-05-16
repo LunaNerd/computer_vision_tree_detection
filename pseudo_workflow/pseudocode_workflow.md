@@ -20,8 +20,8 @@ multiple calibration measurements if possible
 
 intilize list of trees
 - id
-- best_3d_coords (x,y,z)
-- average_3d_coords (x,y,z)
+- best_3d_coords (x,y,z) [dit niet]
+- average_3d_coords (x,y,z) [dit wel met soort clusting]
 - best_score
 - best_diameter in units
 - best_diameter in meters
@@ -34,11 +34,20 @@ intilize list of trees
     - diameter in meters
 - detection_count : int  (len(all_detections))
 
+857.png => json met treepoint : (250,580) => [(1,1,1), (1.1,.9,1.01)]
+        => depth_map met zelfde naam: json punten (240,850) (260,850)
+
+        
+863.png => json met treepoint : (400,800) => [(1.03,1.06,1.08), (1.1,.9,1.01)]
+        => depth_map met zelfde naam: json punten (240,850) (260,850)
+
+
+
 foreach json:
     foreach detected tree in json:
         if score < 85%:
             continue
-        if overlap with other trees:
+        if overlap with other tree prediction boxes:
             continue
         match treepoint [felling cut] from 2D image to 3D refpoint:
             you have a list of 2D refpoints
@@ -96,3 +105,26 @@ this will be easier to map the 3d coords to a 2d top down map of the trees
 ![alt text](image-1.png)
 
 (optional) since we know the tree width, the top down map can have circles with the actual size (diameter) of the tree trunk
+
+
+TASKS:
+
+allign the 3d coords xyz axis with the start postion of the first camera
+this will be easier to map the 3d coords to a 2d top down map of the trees [luna, ilkay]
+
+perceptree jsons generen [thomas]
+
+loop om over frames te gaan [thomas]
+
+felling points 2D naar 3D [wout, robbe]
+
+breedte bepaling in units van bomen [thomas]
+
+bepaling breedte weg in meter op detp images [luna, ilkay]
+
+samenhang code [allemaal]
+
+report [robbe, luna, ilkay, wout, thomas]
+
+(nice to have) batch processing of groups of 200 images for total 1000 images
+(nice to have) doing everything with command line instructions instead of gui
