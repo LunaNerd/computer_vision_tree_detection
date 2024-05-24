@@ -1,3 +1,9 @@
 *.MP4
 */extracted/*
 */undestorted/*
+*/annotated_05/*
+*/extracted_05/*
+*/extracted_30/*
+*/undistorted_05/*
+*/original/*
+*/sparse_text/*
