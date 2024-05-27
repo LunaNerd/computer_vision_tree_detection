@@ -9,3 +9,6 @@
 */sparse_text/*
 assets/*
 **/*.zip
+temp_output/*
+temp_plots/*
+testing/*
