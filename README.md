@@ -10,6 +10,19 @@ Verbiest, Wout<br>
 Versmissen, Luna<br>
 Yüksel, Ilkay<br>
 
+Finale output van het model op 200 frames (link zou door elke ugent account toegankelijk moeten zijn)
+https://ugentbe-my.sharepoint.com/:f:/g/personal/thomas_dirven_ugent_be/Ej2Y21Kj4l5Pg5cxEC9pdUIB-CggUJr7LXyY3iBnbsWNzw?e=dyWHg0
+
+Via deze link, toegang tot:
+
+- Video: `output_video_eastbound_200_frames.mp4`
+- Individuele frames zijn te vinden in de folder `combined_output`.
+- Laatst gegenereerde output: `results_imporved.xlsx`
+- Powerpoint presenatatie
+
+Deze repo staat vol met files, MAAR
+`project_cv_based_tree_measurement.ipynb` is de enige file die  alle opgeschoonde code van heel het project bevat.
+
 ### Geautomatiseerde Boomkartering en -meting met Computer Vision
 
 Welkom in onze projectrepository, waar we de manier waarop we de groei en meting van bomen monitoren willen revolutioneren. Dit project wordt ontwikkeld door een team van 5 studenten onder leiding van David Van Hamme, met als doel een innovatieve oplossing te vinden voor nauwkeurige boomkartering en het monitoren van seizoensgebonden groei door middel van computer vision.
@@ -63,5 +76,5 @@ Computervisie-g10/
 │  │  │  │  ├─ sparse_txt/
 │  │  │  │  ├─ dense_txt/
 │  │  │  ├─ westbound/
-├─ project_cv_based_tree_measurement.ipynb
+├─ project_cv_based_tree_measurement.ipynb (deze file bevat alle code van heeel het project opgeschoond)
 ```
